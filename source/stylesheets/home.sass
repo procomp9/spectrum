@@ -1,0 +1,40 @@
+@import susy
+@import gallery
+
+#mission, #technology, #curriculum
+  height: 400px
+  border-radius: 5px
+  box-shadow: 5px 5px 10px #888
+  color: #505050
+  overflow-y: scroll
+
+#mission, #technology
+  @include span-columns(4, 12)
+  
+#mission
+  background-color: #87d454
+
+#technology
+  background-color: #f6af53
+
+#curriculum
+  @include span-columns(4 omega, 12)
+  background-color: #88bddc
+
+.heading
+  padding-top: 10px
+  font-size: 20px
+  font-weight: bold
+  text-align: center
+  margin-bottom: 10px
+
+.separator
+  border-top: 2px solid #aaa
+  margin-bottom: 10px
+
+.content
+  padding-left: 20px
+  padding-right: 20px
+  font-size: 15px
+
+

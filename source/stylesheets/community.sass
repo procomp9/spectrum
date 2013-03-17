@@ -1,0 +1,99 @@
+@import susy
+
+.heading
+  font-size: 20px
+  margin-bottom: 10px
+.text
+  font-size: 13px
+
+#top
+  @include span-columns(12, 15)
+  @include pre(1)
+  @include post(1)
+  margin-top: 20px
+  margin-bottom: 20px
+  height: 290px
+  padding: 15px
+  background-color: #ddd
+  border-radius: 5px
+  box-shadow: 5px 5px 10px #888
+
+  #events
+    height: 285px
+    overflow-y: scroll
+
+    .event
+      border: 1px solid #aaa
+      border-radius: 5px
+      padding: 10px
+      margin-bottom: 3px
+
+      &:hover
+        border-width: 3px
+
+      .left
+        float: left
+        margin-right: 10px
+        .date
+          margin-bottom: 5px
+        .location
+          text-decoration: none
+      .right
+        .title
+          font-size: 16px
+          margin-bottom: 5px
+        .text
+          text-overflow: ellipsis
+          white-space: nowrap
+          overflow: hidden
+
+#bottom
+  @include span-columns(12, 15)
+  @include pre(1)
+  @include post(1)
+  height: 200px
+  padding: 15px
+  background-color: #ddd
+  border-radius: 5px
+  box-shadow: 5px 5px 10px #888
+
+  #social_media
+    @include span-columns(2, 12)
+    height: 200px
+
+    .pane
+      font-size: 12px
+      margin-bottom: 10px
+
+      &:hover
+        border-width: 3px
+
+  #buzz
+    @include span-columns(10 omega, 12)
+    
+    #feeds
+      height: 198px
+      overflow-y: scroll
+
+      .feed
+        height: 40px
+        border: 1px solid #aaa
+        padding: 5px
+        border-radius: 5px
+        margin-bottom: 3px
+        
+        &:hover
+          border-width: 3px
+
+        .logo
+          float: left
+          margin-right: 10px
+          
+          img
+            width: 36px
+            height: 36px
+
+        .text
+          text-overflow: ellipsis
+          white-space: nowrap
+          overflow: hidden

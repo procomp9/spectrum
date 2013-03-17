@@ -1,0 +1,70 @@
+!!!
+%html
+  %head
+    %meta{'http-equiv' => 'Content-Type', 'content' => 'text/html; charset=UTF-8'}
+    %meta{'name' => 'viewport', 'content' => 'width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1'}
+    %title= yield_content(:title)
+    %link{'rel' => 'icon', 'href' => 'favicon.ico'}
+    =stylesheet_link_tag 'application'
+    
+    /[if lt IE 9]
+      %script{:src =>'http://html5shiv.googlecode.com/svn/trunk/html5.js'}
+
+    %body
+      .page
+        %header
+          #user
+            login/logout
+
+        #logo
+          =link_to image_tag('logo.png'), 'index.html'
+
+        #menu
+          %nav
+            %ul
+              %li
+                =link_to 'Home', 'index.html'
+                %ul
+                  %li
+                    =link_to 'Our Mission', 'index.html#mission'
+                  %li
+                    =link_to 'Technology', 'index.html#technology'
+                  %li
+                    =link_to 'Curriculum', 'index.html#curriculum'
+              %li
+                =link_to 'Community', 'community.html'
+                %ul
+                  %li
+                    =link_to 'Events', 'community.html#events'
+                  %li
+                    =link_to 'Buzz', 'community.html#buzz'
+              %li
+                =link_to 'About Us', 'about.html'
+                %ul
+                  %li
+                    =link_to 'Our team', 'about.html#team'
+                  
+              %li
+                =link_to 'Contact Us', 'contact.html'
+                %ul
+                  %li
+                    =link_to 'Locations', 'contact.html#locations'
+
+
+        .content
+          =yield
+
+        %footer
+          #disclaimer
+            &copy; Spectrum Preschool, LLC
+            =link_to 'Privacy Policy', 'privacy_policy.html'
+
+          %nav
+            =link_to 'Home', 'index.html'
+            =link_to 'Community', 'community.html'
+            =link_to 'About', 'about.html'
+            =link_to 'Contact', 'contact.html'
+
+          #social_links
+            =link_to image_tag('t_logo.png', :width => '40', :height => '40', :id => 'twitter'), 'http://twitter.com/spectrumprek'
+            =link_to image_tag('f_logo.png', :width => '24', :height => '24', :id => 'facebook'), 'http://facebook.com/spectrumpreschool'

@@ -1,0 +1,54 @@
+@import susy
+@import menu
+
+$total-columns: 15
+
+body
+  font-family: Arial
+  background: #fff
+
+  .page
+    //@include susy-grid-background
+    @include container
+
+    // header, footer, and nav are full-width by default.
+    header, footer
+      clear: both
+
+    header
+      #user
+        height: 30px
+        text-align: right
+
+    #logo
+      img
+        width: 720
+        height: 120
+
+    .content
+      
+    footer
+      font-size: 14px
+      padding-top: 20px
+      a
+        text-decoration: none
+
+        &:hover
+          text-decoration: underline
+
+      #disclaimer
+        @include span-columns(6, 15)
+      
+      nav
+        @include span-columns(4, 15)
+        text-align: center
+
+      #social_links
+        @include span-columns(5 omega, 15)
+        text-align: right
+
+        img
+          vertical-align: top
+          
+        #twitter
+          margin-top: -5px

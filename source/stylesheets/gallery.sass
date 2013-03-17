@@ -1,0 +1,71 @@
+#gallery
+  width: 986px
+  margin: auto
+  display: table
+  margin-bottom: 20px
+  padding-top: 10px
+  padding-bottom: 10px
+  background-color: #fff
+  box-shadow: 5px 5px 10px #888
+  border-radius: 5px
+
+  .arrow_left
+    position: absolute
+    margin-top: 200px
+    border-top: 20px solid transparent
+    border-bottom: 20px solid transparent
+    border-right: 15px solid rgba(221,221,221,.85)
+    border-left: 15px solid transparent
+    -moz-transition: border-right 500ms, -moz-transform 500ms
+    -webkit-transition: border-right 500ms, -webkit-transform 500ms
+    -o-transition: border-right 500ms, -o-transform 500ms
+    transition: border-right 500ms, transform 500ms
+
+    &:hover
+      border-right: 15px solid rgba(0,0,0,.85)
+      -moz-transform: border-right
+      -webkit-transform: border-right
+      -o-transform: border-right
+      transform: border-right
+
+  img
+    margin-left: 29px
+    
+  .arrow_right
+    float: right
+    margin-left: -1px
+    margin-top: 200px
+    border-top: 20px solid transparent
+    border-bottom: 20px solid transparent
+    border-right: 15px solid transparent
+    border-left: 15px solid rgba(221,221,221,.85)
+    -moz-transition: border-left 500ms, -moz-transform 500ms
+    -webkit-transition: border-left 500ms, -webkit-transform 500ms
+    -o-transition: border-left 500ms, -o-transform 500ms
+    transition: border-left 500ms, transform 500ms
+
+    &:hover
+      border-left: 15px solid rgba(0,0,0,.85)
+      -moz-transform: border-left
+      -webkit-transform: border-left
+      -o-transform: border-left
+      transform: border-left
+
+  .pagination
+    margin: auto
+    display: table
+
+    ul
+      list-style: none
+
+      li
+        float: left
+        margin-right: 3px
+
+        .slide, .active
+          width: 10px
+          height: 11px
+        .slide
+          background: url('/images/pagination.png') 0 0
+        .active
+          background: url('/images/pagination.png') 0 13px

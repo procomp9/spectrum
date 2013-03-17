@@ -1,0 +1,130 @@
+-content_for(:title, 'Spectrum Pre-K | Community')
+=stylesheet_link_tag 'community'
+
+#top
+  #events
+    .heading
+      Upcomming Events
+    .event
+      .left
+        .date
+          3/16/2013
+        .location
+          =link_to 'map', 'https://maps.google.com/maps?q=University+of+Texas+-+Austin,+Austin,+TX&hl=en&sll=30.344477,-97.745926&sspn=0.011481,0.016801&oq=univer&t=h&hq=University+of+Texas+-+Austin,+Austin,+TX&z=15', :target => 'blank'
+      .right
+        .title
+          This is an event
+        .text
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    .event
+      .left
+        .date
+          3/16/2013
+        .location
+          =link_to 'map', 'https://maps.google.com/maps?q=6500+Shoal+Creek+Boulevard,+Austin,+TX&hl=en&sll=37.0625,-95.677068&sspn=42.987658,68.818359&oq=6500+shoal&t=h&hnear=6500+Shoal+Creek+Blvd,+Austin,+Travis,+Texas+78757&z=16', :target => 'blank'
+      .right
+        .title
+          This is another event
+        .text
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    .event
+      .left
+        .date
+          3/16/2013
+        .location
+          =link_to 'map', 'https://maps.google.com/maps?q=University+of+Texas+-+Austin,+Austin,+TX&hl=en&sll=30.344477,-97.745926&sspn=0.011481,0.016801&oq=univer&t=h&hq=University+of+Texas+-+Austin,+Austin,+TX&z=15', :target => 'blank'
+      .right
+        .title
+          This is an event
+        .text
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    .event
+      .left
+        .date
+          3/16/2013
+        .location
+          =link_to 'map', 'https://maps.google.com/maps?q=6500+Shoal+Creek+Boulevard,+Austin,+TX&hl=en&sll=37.0625,-95.677068&sspn=42.987658,68.818359&oq=6500+shoal&t=h&hnear=6500+Shoal+Creek+Blvd,+Austin,+Travis,+Texas+78757&z=16', :target => 'blank'
+      .right
+        .title
+          This is another event
+        .text
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    .event
+      .left
+        .date
+          3/16/2013
+        .location
+          =link_to 'map', 'https://maps.google.com/maps?q=University+of+Texas+-+Austin,+Austin,+TX&hl=en&sll=30.344477,-97.745926&sspn=0.011481,0.016801&oq=univer&t=h&hq=University+of+Texas+-+Austin,+Austin,+TX&z=15', :target => 'blank'
+      .right
+        .title
+          This is an event
+        .text
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    .event
+      .left
+        .date
+          3/16/2013
+        .location
+          =link_to 'map', 'https://maps.google.com/maps?q=6500+Shoal+Creek+Boulevard,+Austin,+TX&hl=en&sll=37.0625,-95.677068&sspn=42.987658,68.818359&oq=6500+shoal&t=h&hnear=6500+Shoal+Creek+Blvd,+Austin,+Travis,+Texas+78757&z=16', :target => 'blank'
+      .right
+        .title
+          This is another event
+        .text
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+#bottom
+  #social_media
+    .pane
+      #fb-root 
+      :javascript
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+      .fb-like(data-href="https://www.facebook.com/SpectrumPreschool" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="arial")
+    .pane
+      .g-plusone(data-href='https://plus.google.com/109417813279329175762/about' data-size='medium')
+
+      :javascript
+        (function() {
+          var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+          po.src = 'https://apis.google.com/js/plusone.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+
+  #buzz
+    #feeds
+      .heading
+        Buzz
+      .feed
+        .logo
+          =image_tag 'f_logo.png'
+        .text
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      
+      .feed
+        .logo
+          =image_tag 't_logo.png'
+        .text
+          this is some content from a social media site
+      
+      .feed
+        .logo
+          =image_tag 'f_logo.png'
+        .text
+          this is some content from a social media site
+      
+      .feed
+        .logo
+          =image_tag 't_logo.png'
+        .text
+          this is some content from a social media site
+      
